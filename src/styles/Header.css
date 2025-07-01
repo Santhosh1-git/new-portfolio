@@ -1,0 +1,16 @@
+#navbar1{
+    background-color: aqua;
+}
+#navbar2{
+    background-color: yellow;
+}
+
+.navbar-brand{
+    color: black;
+    text-transform: uppercase !important;
+}
+
+.nav-link{
+    text-transform: capitalize;
+    color: black !important;
+}
