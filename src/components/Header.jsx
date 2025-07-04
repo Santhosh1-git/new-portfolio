@@ -20,10 +20,10 @@ function Header() {
             <div className="le" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto m-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                <a className="nav-link" href="#">Home</a>
+                <a className="nav-link" href="#home">Home</a>
                 </li>
                  <li className="nav-item">
-                <a className="nav-link" href="#">about</a>
+                <a className="nav-link" href="#about">about</a>
                 </li>
                 <li className="nav-item">
                 <a className="nav-link" href="#">skills</a>

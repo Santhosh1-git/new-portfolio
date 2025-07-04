@@ -1,0 +1,54 @@
+{
+  "skills": [
+    {
+      "img" :"fa-solid fa-code",
+      "color":"#63E6BE", 
+      "title": "Frontend Technologies",
+      "items": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "React.js",
+        "Next.js",
+        "Tailwind CSS",
+        "Bootstrap",
+        "Responsive Design"
+      ]
+    },
+    {
+      "img":"fa-solid fa-layer-group ",
+      "color":"#63E6BE",
+      "title": "State Management",
+      "items": [
+        "React Context API",
+        "Redux",
+        "Zustand",
+        "React Query"
+      ]
+    },
+    {
+      "img":"fa-brands fa-github",
+      "color":"#FFD43B",
+      "title": "Version Control",
+      "items": [
+        "Git",
+        "GitHub",
+        "GitLab"
+      ]
+    },
+    {
+      "img":"fa-solid fa-user ",
+      "color":"#63E6BE",
+      "title": "Soft Skills",
+      "items": [
+        "Team Collaboration",
+        "Problem Solving",
+        "Effective Communication",
+        "Time Management",
+        "Adaptability",
+        "Creativity",
+        "Attention to Detail"
+      ]
+    }
+  ]
+}
