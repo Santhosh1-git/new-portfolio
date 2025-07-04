@@ -1,9 +1,11 @@
 import Header from './components/Header'
 import Vanta from './components/Vanta'
 import './styles/Home.css'
-import { Container,Row,Col } from 'react-bootstrap'
+import { Container,Row,Col,Card,CardBody } from 'react-bootstrap'
 import Typwriter from "typewriter-effect";
-
+// project img
+import ecom from './assets/projects/ecom.jpg'
+import clg from './assets/projects/clg.jpg'
 // about image
 import aboutimg from './assets/aboutimg.jpg'
 // skills json
@@ -15,7 +17,7 @@ function Home() {
       <div className="home">
         <Vanta/>
     <Container>
-    <Row>
+    <Row id='home' >
     <Col lg={7} md={12} >
       <div className="profile">
       <h1 className='name'>Hi i'm Santhoshkumar</h1>
@@ -87,7 +89,7 @@ function Home() {
                 <Col lg={4}>
                 <center>
                    <div className="projects">
-                  <i class="fa-solid fa-medal" style={{color: "#FFD43B"}}></i>
+                  <i className="fa-solid fa-medal" style={{color: "#FFD43B"}}></i>
                   <h4>projects</h4>
                   <p className='role' >2+projects</p>
                 </div>    
@@ -118,7 +120,7 @@ function Home() {
         {/* ---------------------------------------------- */}
 
           <Container fluid id='skill' >
-            <Row>
+            <Row id='skill_nav' >
         <div className="skills_section">
               <Col lg={12} >
               <center>
@@ -129,13 +131,13 @@ function Home() {
               </Col>
 
               <Row>
-               {skillsdata.skills.map((e, index) => {
+               {skillsdata.skills.map((e) => {
                  return (
-                   <Col lg={4} >
-                    <div className="skills_head" key={index}>
-                      <h4 className='heading' key={index} > <span> <i className={e.img} style={{color:e.color}} id='skills_icon'  ></i></span>  {e.title}</h4>
+                   <Col lg={4}  md={6} >
+                    <div className="skills_head" key={e.id}>
+                      <h4 className='heading'> <span> <i className={e.img} style={{color:e.color}} id='skills_icon'  ></i></span>  {e.title}</h4>
                         {e.items.map((item, i) => (
-                          <p key={index} className='item'>{item}</p>
+                          <p key={i} className='item'>{item}</p>
                         ))}
                     </div>
               </Col>
@@ -145,7 +147,69 @@ function Home() {
         </div>
             </Row>
           </Container>
+          {/* --------------------------- */}
+                {/* project section */}
+          {/* --------------------------- */}
+          <Container fluid id='bg_project'>
+            <Container>
 
+            <Row id='project' >
+              <Col lg={12} >
+              <center>
+                <div className="project_section">
+                <h6 className='title_head'>my work</h6>
+                 <h4 className='title_skill' >projects</h4>
+                <p className='sub_title' > A Selection of My Recent Work</p>
+                </div>
+              </center>
+              </Col>
+              <Col lg={6}>
+                <div className="project_link">
+                  <a className='link' target='_blank'  href="https://mix-ecom-web.netlify.app/">
+                  <Card className='pra_col' >
+                    <div className="img_flow">
+                    <img src={ecom} alt="img not found" />
+                    </div>
+                    <CardBody className='project_body' >
+                      <h4 className='project_title' >mini eCommerce website</h4>
+                      <h4 className='project_title' >Everything You Love, Delivered to Your Doorstep</h4>
+                      <p> developed a responsive eCommerce website with a modern, user-friendly interface. </p>
+                      <div className="tools">
+                        <p>html</p>
+                        <p>css</p>
+                        <p>javascript</p>
+                        <p>react js</p>
+                      </div>
+                    </CardBody>
+                  </Card>
+                  </a>
+                </div>
+              </Col>
+              <Col lg={6}  >
+                <div className="clg_link">
+                  <a  className='link' target='_blank' href="https://arsha-bharathi.netlify.app ">
+                  <Card className='pra_col' >
+                    <div className="img_flow">
+                    <img src={clg} alt="img not found" />
+                    </div>
+                    <CardBody className='project_body' >
+                      <h4 className='project_title' >mini College website</h4>
+                      <h4 className='project_title' >Your Gateway to Campus Information</h4>
+                      <p> I designed and developed a responsive college website focused on delivering clear information for students, faculty, and visitors. </p>
+                      <div className="tools">
+                        <p>html</p>
+                        <p>css</p>
+                        <p>javascript</p>
+                        <p>react js</p>
+                      </div>
+                    </CardBody>
+                  </Card>
+                  </a>
+                </div>
+              </Col>
+            </Row>
+            </Container>
+          </Container>
     </>
   )
 }

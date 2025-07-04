@@ -210,10 +210,10 @@ body {
 .skills_head{
     background-color: rgb(5, 30, 51);
     padding: 5% 3% 5% 3% !important ;
-    overflow: hidden;
     margin-bottom: 5%;
     font-family: sans-serif;
     border-radius: 10px;
+    height: 90%;
 }
 
 .heading{
@@ -234,4 +234,67 @@ body {
     background-color: rgba(155, 160, 153, 0.281);
     padding: 3.4%;
     border-radius: 50%;
+}
+
+/* ------------------------ */
+/* project section */
+/* ------------------------ */
+
+
+#bg_project{
+    background-color: #0a101e;
+}
+
+.link{
+    text-decoration: none !important;
+}
+.project_section{
+    margin-top: 4%;
+
+}
+.pra_col{
+    background-color: rgb(5, 30, 51);
+   
+}
+.img_flow{
+    overflow: hidden !important ;
+    height:16rem !important;
+    width: 100% !important ;
+    border-radius: 10px;
+}
+.img_flow>img{
+    transition: 1s;
+    height:16rem !important;
+    width: 100% !important ;
+
+}
+.img_flow>img:hover{
+    transform: scale(1.1);
+}
+
+.project_body{
+    margin: 3 1%;
+    color: silver;
+    font-family: sans-serif;
+
+
+}
+
+.project_title{
+    color: white;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: clamp(1rem, 1rem, 2rem);
+}
+
+.tools{
+    display:flex !important;
+}
+.tools>p{
+    margin-right: 1%;
+    background-color: rgba(155, 160, 153, 0.281);
+    padding: 2%;
+    width: fit-content;
+     border-radius: 5px;
+     color: white;
 }
