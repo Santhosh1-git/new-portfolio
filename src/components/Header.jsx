@@ -15,7 +15,7 @@ function Header() {
     <>
       <nav className="navbar-expand navbar " id={a? 'navbar1' : 'navbar2'} >
         <div className="container">
-            <a className="navbar-brand" href="#"><span className='name_first' >S</span>anthoshkumar</a>
+            <a className="navbar-brand" href="#"><span className='name_first' >S</span>anthosh</a>
             {menu? <i className="fa-solid fa-bars ms-auto nav-icon " onClick={change}></i>:<i className="fa-solid fa-xmark ms-auto nav-icon  " onClick={change}></i> }
             <div className="le" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto m-auto mb-2 mb-lg-0">
