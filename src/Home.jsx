@@ -10,6 +10,7 @@ import clg from './assets/projects/clg.jpg'
 import aboutimg from './assets/aboutimg.jpg'
 // skills json
 import skillsdata from './components/Skills.json'
+import Footer from './components/Footer';
 function Home() {
   return (
     <>
@@ -46,7 +47,10 @@ function Home() {
     </div>
     </center>
       </div>
+      {/* ------------------- */}
       {/* about section*/}
+      {/* ------------------- */}
+
         <Container fluid className='bg_color' >
           <Row id='about' >
             <Col lg={6} md={12}  >
@@ -210,6 +214,86 @@ function Home() {
             </Row>
             </Container>
           </Container>
+          {/* -------------------- */}
+          {/* contact */}
+          {/* -------------------- */}
+            <Container fluid id='contact' >
+              <Container>
+
+              <Row >
+                <Col lg={12} >
+                <center>
+                  <div className="contect_section">
+                   <h6 className='title_head'>contact me</h6>
+                 <h4 className='title_skill' >Have a Question? Let’s Talk!</h4>
+                  </div>
+                </center>
+                <br />
+                </Col>
+                <Col lg={6} md={6} >
+                  <div className="contact_link">
+                    <h4 className='title_skill' >lets start a conversation</h4>
+                    <p className='sub_title'>Let’s Build Something Great Together</p>
+                  
+                  <div className="contact">
+                  <i className="fa-solid fa-location-dot" style={{color: "#188de7"}}></i><span>Thanjavur , Tamilnade</span>
+                    <br />
+                    <br />
+                  <i className="fa-solid fa-envelope" style={{color: "#188de7"}} ></i><span>k.santhosh.ui@gmail.com</span>
+                  <br />
+                  <br />
+                  <i className="fa-solid fa-phone" style={{color: "#188de7"}}  ></i> <span>9566947648</span>
+                  <br />
+                  <br />
+                  <h6>Follw Me</h6>
+                     < p className='socila_icon' ><span> <i className="fa-brands fa-linkedin" style={{color: "#929496"}}></i></span>
+      <span><i className="fa-brands fa-github" style={{color: "#8a8c8f"}}></i></span></p>
+                </div>
+
+                  </div>
+                </Col>
+                <Col lg={6} md={6} >
+                <div className="message_send">
+                   <h4 className='title_skill' >send me a message</h4>
+                   <Row>
+
+                    <Col lg={6} >
+                    <div className="name_email">
+                    <span>name</span><br />
+                    <input type="text" />
+                    </div>
+                    </Col> 
+
+                    <Col lg={6} >
+                    <div className="name_email">
+                    <span>email</span><br />
+                    <input type="text" />
+                    </div>
+                    </Col>
+
+                    <Col lg={12}>
+                      <div className="subject">
+                      <span>subject</span><br />
+                    <input type="text" />
+                      </div>
+                    </Col>
+                    <Col lg={12} >
+                    <div className="message">
+                    <span>message</span><br />
+                      <textarea name="text" ></textarea>
+                      <button className='btn btn-info ' >send message</button>
+                      </div>
+                    </Col>
+                   </Row>
+                </div>
+                </Col>
+              </Row>
+              <br />
+              <br />
+              </Container>
+            </Container>
+            <Footer/>
+
     </>
   )
 }

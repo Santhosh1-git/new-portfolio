@@ -31,12 +31,12 @@ function Header() {
                 <li className="nav-item">
                 <a className="nav-link" href="#project">projects</a>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                 <a className="nav-link" href="#">experiance</a>
-                </li>
-                <li className="nav-item">
+                </li> */}
+                {/* <li className="nav-item">
                 <a className="nav-link" href="#">certificates</a>
-                </li>
+                </li> */}
                 <li className="nav-item">
                 <a className="nav-link" href="#">contact</a>
                 </li>

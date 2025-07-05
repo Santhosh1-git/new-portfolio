@@ -1,0 +1,14 @@
+#footer{
+    background-color: black;
+    padding: 2%;
+    font-family: sans-serif !important;
+    color: white;
+}
+.name{
+    color: white;
+}
+
+.footer_l1>.about_demo{
+    line-height: 12px;
+    color: aliceblue;
+}
