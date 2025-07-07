@@ -1,8 +1,6 @@
 import Header from './components/Header'
-import Vanta from './components/Vanta'
 import './styles/Home.css'
 import { Container,Row,Col,Card,CardBody } from 'react-bootstrap'
-import Typwriter from "typewriter-effect";
 // project img
 import ecom from './assets/projects/ecom.jpg'
 import clg from './assets/projects/clg.jpg'
@@ -10,18 +8,20 @@ import clg from './assets/projects/clg.jpg'
 import aboutimg from './assets/aboutimg.jpg'
 // skills json
 import skillsdata from './components/Skills.json'
+// profile img
+import profile from './assets/santhosh.jpg'
 import Footer from './components/Footer';
+// my cv
 function Home() {
   return (
     <>
       <Header/>
-      <div className="home">
-        <Vanta/>
-    <Container>
-    <Row id='home' >
-    <Col lg={7} md={12} >
+    <Container fluid  id="home1"  >
+    <Container  >
+    <Row>
+    <Col lg={6} md={6} >
       <div className="profile">
-      <h1 className='name'>Hi i'm Santhoshkumar</h1>
+      <h1 className='name'>Hi I'm Santhoshkumar</h1>
       <h4 className='role' >aspiring web developer | </h4>
 
       <h4 className='role'>frontend developer</h4>
@@ -29,24 +29,39 @@ function Home() {
       <p className='about_demo' >and delivering high-performance web  </p>
       <p className='about_demo'> applications that solve real-world problems</p>
 
-      <button className='btn text-light b1  mt-2 ' > Download cv</button><button className='btn mt-2 bg-dark text-light b2 '> Contact me </button>
+      <button className='btn text-light b1  mt-2 ' >
+          <a href="/assets/cv/Santhosh_resume.pdf" download="SanthoshKumar_CV.pdf">
+          Download CV
+        </a>
+
+
+      </button>
+      <button className='btn mt-2 bg-dark text-light b2 '> <a href="#contact"> Contact me </a> </button>
       
       < p className='socila_icon' ><span> <i className="fa-brands fa-linkedin" style={{color: "#929496"}}></i></span>
-      <span><i className="fa-brands fa-github" style={{color: "#8a8c8f"}}></i></span></p>
+      <span> <a target='_blank' href="http://github.com/Santhosh1-git"> <i className="fa-brands fa-github" style={{color: "#8a8c8f"}}></i></a> </span></p>
       </div>
     </Col>
-    <Col lg={5} >
-      <h1 className='text-light' >image</h1>
+    <Col lg={6} md={6} >
+      <div className="profile_img">
+        <span className='stiker' >2+ projects</span>
+          <img src={profile} alt="img not found" />
+      </div>
     </Col>
-    </Row>
-    </Container>
+    <Col lg={12} md={12} >
+    <br />
+    <br />
     <center>
     <div className='scroll'>
        <p>scroll down</p>
       <span><i className="fa-solid fa-arrow-down" style={{ color: "#74C0FC"}} ></i></span>
     </div>
     </center>
-      </div>
+    </Col>
+    </Row>
+    </Container>
+    </Container>
+    
       {/* ------------------- */}
       {/* about section*/}
       {/* ------------------- */}
@@ -61,7 +76,7 @@ function Home() {
             <Col lg={6} md={12}  >
               <div className="about_details">
                 <h6 className='title' >about me</h6>
-                <h4 className='sec_heading' >aspiring web developer with a passion for olve real problems and delight users. </h4>
+                <h4 className='sec_heading' >aspiring web developer with a passion for solve real problems and delight users. </h4>
 
                 <p>I enjoy collaborating with designers, backend developers, and clients to deliver projects that solve real-world problems. From responsive layouts to interactive features, my goal is to create experiences that not only look good but also work seamlessly across all devices.</p>
 
@@ -102,7 +117,7 @@ function Home() {
                 </Row>
                 <div className="contact">
                   
-                  <i className="fa-solid fa-location-dot" style={{color: "#188de7"}}></i><span>Thanjavur , Tamilnade</span>
+                  <i className="fa-solid fa-location-dot" style={{color: "#188de7"}}></i><span>Thanjavur , Tamil Nade</span>
                   
                     <br />
                   
@@ -135,10 +150,10 @@ function Home() {
               </Col>
 
               <Row>
-               {skillsdata.skills.map((e) => {
+               {skillsdata.skills.map((e,index) => {
                  return (
-                   <Col lg={4}  md={6} >
-                    <div className="skills_head" key={e.id}>
+                   <Col lg={4}  md={6} key={index} >
+                    <div className="skills_head" >
                       <h4 className='heading'> <span> <i className={e.img} style={{color:e.color}} id='skills_icon'  ></i></span>  {e.title}</h4>
                         {e.items.map((item, i) => (
                           <p key={i} className='item'>{item}</p>
@@ -217,6 +232,7 @@ function Home() {
           {/* -------------------- */}
           {/* contact */}
           {/* -------------------- */}
+
             <Container fluid id='contact' >
               <Container>
 
@@ -245,9 +261,9 @@ function Home() {
                   <i className="fa-solid fa-phone" style={{color: "#188de7"}}  ></i> <span>9566947648</span>
                   <br />
                   <br />
-                  <h6>Follw Me</h6>
+                  <h6>Follow Me</h6>
                      < p className='socila_icon' ><span> <i className="fa-brands fa-linkedin" style={{color: "#929496"}}></i></span>
-      <span><i className="fa-brands fa-github" style={{color: "#8a8c8f"}}></i></span></p>
+      <span><a target='_blank' href="http://github.com/Santhosh1-git"> <i className="fa-brands fa-github" style={{color: "#8a8c8f"}}>  </i> </a>   </span></p>
                 </div>
 
                   </div>
