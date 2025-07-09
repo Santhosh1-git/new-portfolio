@@ -23,6 +23,7 @@
 .name_first{
     color: yellowgreen;
 }
+
 .navbar-brand:hover{
     color: aliceblue;
 }
@@ -31,10 +32,10 @@
     text-transform: capitalize;
     color: white !important;
 }
-
-.nav-link:focus{
-    color:yellowgreen !important;
+.nav-link:hover{
+    color: yellowgreen !important ;
 }
+
 
 .nav-icon{
     display: none;
@@ -46,7 +47,7 @@
 
 
  .sec_nav2{
-        height: 48%;
+        height: 38%;
         width: 100%;
         z-index: 800 !important ;
         position: absolute;
@@ -86,9 +87,14 @@
     }
    
     .sm_list{
-      padding: 1%;
-      width: fit-content;
+        padding: 1%;
+        width: fit-content;
     }
+    .sm_list>a{
+      text-decoration: none !important;
+        color: white;
+    }
+   
     .navbar-nav2{
         color: black !important;
     }
@@ -100,10 +106,17 @@
     .sm_list:focus{
     color:yellowgreen !important;
 }
-    /* .sec_nav{
-        width: 98% !important;
-    }
-    .sec_nav2{
-        width: 98% !important;
-    } */
+  
 }
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.nav-link.active {
+  color: green;
+}
+

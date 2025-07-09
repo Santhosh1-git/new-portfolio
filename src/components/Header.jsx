@@ -20,7 +20,7 @@ function Header() {
             <div className="le" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto m-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                <a className="nav-link" href="#home1">Home</a>
+                <a className="nav-link active " href="#home1">  Home</a>
                 </li>
                  <li className="nav-item">
                 <a className="nav-link" href="#about">about</a>
@@ -39,22 +39,25 @@ function Header() {
             </div>
         </div>
         </nav>
+
+
         <div className={menu?"sec_nav":"sec_nav2"} id='navbar_small'  >
         <ul className='nav_small' >
+          <br />
           <li className='sm_list' >
-                <a  href="#home1">Home</a>
+                <a  href="#home1" onClick={change} > <i className="fa-solid fa-house mx-2 "></i>  Home</a>
           </li>
           <li className='sm_list' >
-                <a href="#about">about</a>
+                <a href="#about" onClick={change} > <i className="fa-solid fa-user mx-2"></i>  about</a>
           </li>
           <li className='sm_list' >
-                <a  href="#skill_nav">skills</a>
+                <a  href="#skill_nav" onClick={change} > <i className="fa-solid fa-code mx-2"></i>  skills</a>
           </li>
           <li className='sm_list' >
-                <a  href="#project">projects</a>
+                <a  href="#project" onClick={change} > <i className="fa-solid fa-layer-group mx-2"></i>  projects</a>
           </li>
           <li className='sm_list' >
-                <a href="#contact">contact</a>
+                <a href="#contact" onClick={change} > <i className="fa-solid fa-phone mx-2"></i>  contact</a>
           </li>
         </ul>
         </div>

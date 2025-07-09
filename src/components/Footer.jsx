@@ -21,6 +21,7 @@ function Footer() {
         <Col lg={4} md={12} > 
           <div className="quick_links">
             <ul>
+              <li> <a href="#" className='fs-2' > quick links </a> </li>
               <li> <a href="#home1"> home </a> </li>
               <li> <a href="#about"> about </a> </li>
               <li> <a href="#skill_nav"> skills </a> </li>
@@ -32,6 +33,7 @@ function Footer() {
          </Col>
         <Col lg={4} md={12} > 
             <div className="footer_contact">
+                <h4 className='fs-2' >contact</h4>
                 <i className="fa-solid fa-location-dot" style={{color: "#188de7"}}></i> <span> Thanjavur , TamilNade</span>
                   
                     <br />
