@@ -29,13 +29,14 @@ function Home() {
       <p className='about_demo' >and delivering high-performance web  </p>
       <p className='about_demo'> applications that solve real-world problems</p>
 
+
       <button className='btn text-light b1  mt-2 ' >
-          <a href="/assets/cv/Santhosh_resume.pdf" download="SanthoshKumar_CV.pdf">
+         <a href="src/assets/cv/santhosh_resume.pdf"
+          download="SanthoshKumar_CV.pdf">
           Download CV
         </a>
-
-
       </button>
+
       <button className='btn mt-2 bg-dark text-light b2 '> <a href="#contact"> Contact me </a> </button>
       
       < p className='socila_icon' ><span> <i className="fa-brands fa-linkedin" style={{color: "#929496"}}></i></span>
